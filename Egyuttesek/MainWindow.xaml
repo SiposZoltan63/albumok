@@ -16,7 +16,7 @@
             </LinearGradientBrush>
         </Grid.Background>
         <DataGrid x:Name="datagridview" Height="400px" Width="500px" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,17,290,17"/>
-        <Button x:Name="kilepesGomb" Content="Kilépés" HorizontalAlignment="Left" Margin="589,363,0,0" VerticalAlignment="Top" Width="142" Height="42" FontSize="24" Foreground="White" FontFamily="Segoe UI Black">
+        <Button x:Name="kilepesGomb" Content="Kilépés" HorizontalAlignment="Left" Margin="589,363,0,0" VerticalAlignment="Top" Width="142" Height="42" FontSize="24" Foreground="White" FontFamily="Segoe UI Black" Click="kilepesGomb_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
@@ -24,7 +24,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="tszgomb" Content="Tagok száma" HorizontalAlignment="Left" Margin="589,0,0,0" VerticalAlignment="Center" Width="142" Height="38" Foreground="White" FontSize="20" FontFamily="Rockwell">
+        <Button x:Name="tszgomb" Content="Tagok száma" HorizontalAlignment="Left" Margin="589,0,0,0" VerticalAlignment="Center" Width="142" Height="38" Foreground="White" FontSize="20" FontFamily="Rockwell" Click="tszgomb_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF00FF56"/>
@@ -33,7 +33,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="lhagomb" Content="Leghosszabb album" HorizontalAlignment="Left" Margin="589,72,0,0" VerticalAlignment="Top" Width="142" Height="38" Background="#FF00D029" Foreground="White" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Button x:Name="lhagomb" Content="Leghosszabb album" HorizontalAlignment="Left" Margin="589,72,0,0" VerticalAlignment="Top" Width="142" Height="38" Background="#FF00D029" Foreground="White" FontFamily="Arial Black" FontWeight="Bold" Click="lhagomb_Click"/>
 
     </Grid>
 </Window>

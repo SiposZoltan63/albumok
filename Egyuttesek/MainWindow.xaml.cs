@@ -24,5 +24,20 @@ namespace Egyuttesek
         {
             InitializeComponent();
         }
+
+        private void lhagomb_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void tszgomb_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void kilepesGomb_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
