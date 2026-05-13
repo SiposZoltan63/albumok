@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace Egyuttesek.Models
 {
-    public partial class librarydbContext
+    public partial class librarydbContext : DbContext
     {
         public librarydbContext()
         {

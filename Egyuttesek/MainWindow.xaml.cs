@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Egyuttesek.Datas;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,13 @@ namespace Egyuttesek
     /// </summary>
     public partial class MainWindow : Window
     {
+        Read read = new Read();
+        
         public MainWindow()
         {
             InitializeComponent();
+            var list = read.ReadAlbumok();
+            datagridview.ItemsSource = list;
         }
 
         private void lhagomb_Click(object sender, RoutedEventArgs e)
