@@ -18,5 +18,13 @@ namespace Egyuttesek.Datas
                 return users;
             }
         }
+        public int GetTagokSzama(string egyuttesNeve)
+        {
+            using (var context = new librarydbContext())
+            {
+                return context.Zeneszek.Count(z => z.egyuttes == egyuttesNeve);
+            }
+        }
     }
+
 }

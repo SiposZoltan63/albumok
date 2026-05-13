@@ -1,6 +1,8 @@
 ﻿using Egyuttesek.Datas;
+using Egyuttesek.Models;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,6 +23,8 @@ namespace Egyuttesek
     /// </summary>
     public partial class MainWindow : Window
     {
+
+
         Read read = new Read();
         
         public MainWindow()
@@ -32,14 +36,22 @@ namespace Egyuttesek
 
         private void lhagomb_Click(object sender, RoutedEventArgs e)
         {
-
+         
         }
 
         private void tszgomb_Click(object sender, RoutedEventArgs e)
         {
+            var kijeloltAlbum = datagridview.SelectedItem as Albumok;
 
+            if (kijeloltAlbum != null)
+            {
+                string egyuttesNeve = kijeloltAlbum.egyuttes;
+
+                int tagokSzama = read.GetTagokSzama(egyuttesNeve);
+
+                MessageBox.Show($"A(z) {egyuttesNeve} együttes tagjainak száma: {tagokSzama} fő.");
+            }
         }
-
         private void kilepesGomb_Click(object sender, RoutedEventArgs e)
         {
             this.Close();

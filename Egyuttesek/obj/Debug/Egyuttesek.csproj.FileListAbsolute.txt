@@ -123,4 +123,3 @@ C:\Users\siposz\Gitwork\albumok\Egyuttesek\obj\Debug\Egyuttesek.csproj.CoreCompi
 C:\Users\siposz\Gitwork\albumok\Egyuttesek\obj\Debug\Egyuttesek.csproj.Up2Date
 C:\Users\siposz\Gitwork\albumok\Egyuttesek\obj\Debug\Egyuttesek.exe
 C:\Users\siposz\Gitwork\albumok\Egyuttesek\obj\Debug\Egyuttesek.pdb
-C:\Users\siposz\Gitwork\albumok\Egyuttesek\obj\Debug\Egyuttesek.exe.config
